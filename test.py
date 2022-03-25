@@ -23,7 +23,7 @@ try:
   result = browser.find_elements(By.CSS_SELECTOR, "div#search a[href^='https://']")
   # TODO: 遍歷取出資料
   oneItem = result[0]
-  print(oneItem)
+  print(oneItem.text)
 except TimeoutException:
   print('等待逾時！')
 finally:
